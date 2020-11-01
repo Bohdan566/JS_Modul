@@ -259,15 +259,25 @@
 
 // Завдання_22
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// for(let i = 0; i <= 02; i++){
-//     for(let j = 0; j < 60; j++){
-     
-//         for(let k = 0; k < 60; k++){
+
+// let i;
+// let j;
+// let k;
+
+
+// for( i = 0; i < 3; i++){
+//     for( j = 0; j < 60; j++){
+
+//         for( k = 0; k < 60; k++){
+
 //             console.log(i + " hours " + j + " minutes " + k + " seconds");
 //             document.write(i + " hours " + j + " minutes "+ k + " seconds" +"<br>");
-//             if(i == 2 && j == 20 && k == 0){
-//                 break
-//             }
+//         }
+//         if( i == 2 && j == 20){
+//             console.log(i + " hours " + j + " minutes " + k + " seconds");
+//             document.write(i + " hours " + j + " minutes "+ k + " seconds" +"<br>");
+            
+//             break
 //         }
 //     }
 // }
@@ -275,4 +285,30 @@
 // Завдання_23
 
 
+// let arr = ["a", "b", "c"];
 
+// for( let i = 0; i < arr.length; i++){
+//     console.log(arr[i]);
+//     document.write(arr[i]);
+// }
+
+// Завдання_24
+
+// let arr = ["a", "b", "c"];
+
+// let i = 0;
+
+// while( i < arr.length ){
+//     document.write(arr[i])
+//     console.log(arr[i]);
+//     i++
+// }
+
+// Завдання_25
+
+// let arr = ["a", "b", "c"];
+
+// for( let i of arr){
+//     console.log(i);
+//     document.write(i);
+// }
