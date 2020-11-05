@@ -507,6 +507,9 @@
 // };
 
 
+
+
+
 // - Дано 2 масиви з рівною кількістю об'єктів.
 // Масиви:
 
@@ -522,6 +525,9 @@
 //     {user_id: 2, country: 'Poland', city: 'Krakow'}, 
 //     {user_id: 4, country: 'USA', city: 'Miami'},
 // ];
+
+
+
 
 // З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
 // Записати цей об'єкт в новий масив
@@ -545,6 +551,7 @@
 // users_cities = usersWithId;
 
 // console.log(users_cities);
+
 
 
 
@@ -573,6 +580,9 @@
 //     console.log(index_tagName.innerText);
 // };
 
+
+
+
 // - змінити цей текст використовуючи селектори id, class,  tag
 
 // div_id.innerText = "Goog Lack";
@@ -587,6 +597,9 @@
 // for(index2_tagName of div_tagName){
 //     console.log(index2_tagName.innerText);
 // };
+
+
+
 
 // - змінити висоту та ширину блоку використовуючи селектори id, class,  tag
 
@@ -623,6 +636,8 @@
 // chart.appendChild(tr);
 
 // document.body.appendChild(chart);
+
+
 
 
 
@@ -696,40 +711,136 @@
 // document.body.appendChild(chart);
 
 
+
+
+
 // -Завантажити з мережі будь-який шаблон сайту. Підключити до нього свій скріпт-файл. У файлі прописати наступні доступи та дії
 // - знайти всі елементі, які мають class
 
 
+// let elements = document.getElementsByTagName("*")
 
-
-let elements = document.getElementsByTagName("*")
-
-for(element of elements){
-    if(element.getAttribute("class")){
-        console.log(element);
-    };
-};
+// for(element of elements){
+//     if(element.getAttribute("class")){
+//         console.log(element);
+//     };
+// };
 
 
 
 
 // - знайти всі параграфи ,та змінити текст на hello oktenweb!
 
-let elements_p = document.getElementsByTagName("p");
+// let elements_p = document.getElementsByTagName("p");
 
-for(p of elements_p){
-    p.innerText = "Hello";
-};
+// for(p of elements_p){
+//     p.innerText = "Hello";
+// };
 
 
 
 
 // - знайти всі div та змінити ім колір на червоний
 
-let elements_div = document.getElementsByTagName("div");
+// let elements_div = document.getElementsByTagName("div");
 
-for(div of elements_div){
-    div.style.color = "red";
+// for(div of elements_div){
+//     div.style.color = "red";
+// };
+
+
+
+
+
+// є сторінка rules.html. Контентом сторінки є заголовки та параграфи. Заголовки (h2) характеризують тему контенту яка вказана в 
+// параграфі. створити скрипт, котрий зчитує всі заголовки, та робить в блоці з id=content з них список(ul>li), який буде змістом того, 
+// що знаходиться на сторінці. Скріпт повинен працювати навіть якщо кількість блоків з заголовком та параграфом зміниться.
+
+// let headers_2 = document.getElementsByTagName("h2");
+// let content = document.getElementById("content");
+// let ul = document.createElement("ul");
+
+// for(h2 of headers_2){
+//     let li = document.createElement("li");
+//     li.innerText = h2.innerText;
+//     ul.appendChild(li);
+// };
+
+// content.appendChild(ul);
+
+
+
+
+// -Є масив котрий характеризує правила. Створити скрипт який ітерує цей масив, та робить з кожне правило в окремому блоці.
+// При цому в блоці, номер правила записати в свій блок, текст правила записати в свій окремий блок.
+// Результатом відпрацювання скріпта повинна бути структура яка міститься в блоці wrap файла rule.html
+
+
+let rules = [
+    {
+        title: 'Первое правило Бойцовского клуба.',
+        body: 'Никому не рассказывать о Бойцовском клубе.'
+    },
+    {
+        title: 'Второе правило Бойцовского клуба.',
+        body: 'Никогда никому не рассказывать о Бойцовском клубе.'
+    },
+    {
+        title: 'Третье правило Бойцовского клуба.',
+        body: 'В схватке участвуют только двое.'
+    },
+    {
+        title: 'Четвертое правило Бойцовского клуба.',
+        body: 'Не более одного поединка за один раз.'
+    },
+    {
+        title: 'Пятое правило Бойцовского клуба.',
+        body: 'Бойцы сражаются без обуви и голые по пояс.'
+    },
+    {
+        title: 'Шестое правило Бойцовского клуба.',
+        body: 'Поединок продолжается столько, сколько потребуется.'
+    },
+    {
+        title: 'Седьмое правило Бойцовского клуба.',
+        body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.'
+    },
+    {
+        title: 'Восьмое и последнее правило Бойцовского клуба.',
+        body: 'Новичок обязан принять бой.'
+    },
+
+];
+
+
+
+let wrap2 = document.createElement("id");
+wrap2.id = "wrap2";
+
+for(rule_h2 of rules){
+    let title_div = document.createElement("div");
+    title_div.classList = "title_div";
+
+    let h2 = document.createElement("h2");
+    h2.innerText = rule_h2.title;
+
+    title_div.appendChild(h2);
+    
+    let body_div = document.createElement("div");
+    body_div.classList = "body_div";
+
+    let p = document.createElement("p");
+    p.innerText = rule_h2.body;
+
+    body_div.appendChild(p);
+
+    wrap2.appendChild(title_div);
+    wrap2.appendChild(body_div);
 };
+
+document.body.appendChild(wrap2);
+
+
+
 
 
