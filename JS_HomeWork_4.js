@@ -485,71 +485,71 @@
 // Результатом відпрацювання скріпта повинна бути структура яка міститься в блоці wrap файла rule.html
 
 
-let rules = [
-    {
-        title: 'Первое правило Бойцовского клуба.',
-        body: 'Никому не рассказывать о Бойцовском клубе.'
-    },
-    {
-        title: 'Второе правило Бойцовского клуба.',
-        body: 'Никогда никому не рассказывать о Бойцовском клубе.'
-    },
-    {
-        title: 'Третье правило Бойцовского клуба.',
-        body: 'В схватке участвуют только двое.'
-    },
-    {
-        title: 'Четвертое правило Бойцовского клуба.',
-        body: 'Не более одного поединка за один раз.'
-    },
-    {
-        title: 'Пятое правило Бойцовского клуба.',
-        body: 'Бойцы сражаются без обуви и голые по пояс.'
-    },
-    {
-        title: 'Шестое правило Бойцовского клуба.',
-        body: 'Поединок продолжается столько, сколько потребуется.'
-    },
-    {
-        title: 'Седьмое правило Бойцовского клуба.',
-        body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.'
-    },
-    {
-        title: 'Восьмое и последнее правило Бойцовского клуба.',
-        body: 'Новичок обязан принять бой.'
-    },
+// let rules = [
+//     {
+//         title: 'Первое правило Бойцовского клуба.',
+//         body: 'Никому не рассказывать о Бойцовском клубе.'
+//     },
+//     {
+//         title: 'Второе правило Бойцовского клуба.',
+//         body: 'Никогда никому не рассказывать о Бойцовском клубе.'
+//     },
+//     {
+//         title: 'Третье правило Бойцовского клуба.',
+//         body: 'В схватке участвуют только двое.'
+//     },
+//     {
+//         title: 'Четвертое правило Бойцовского клуба.',
+//         body: 'Не более одного поединка за один раз.'
+//     },
+//     {
+//         title: 'Пятое правило Бойцовского клуба.',
+//         body: 'Бойцы сражаются без обуви и голые по пояс.'
+//     },
+//     {
+//         title: 'Шестое правило Бойцовского клуба.',
+//         body: 'Поединок продолжается столько, сколько потребуется.'
+//     },
+//     {
+//         title: 'Седьмое правило Бойцовского клуба.',
+//         body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.'
+//     },
+//     {
+//         title: 'Восьмое и последнее правило Бойцовского клуба.',
+//         body: 'Новичок обязан принять бой.'
+//     },
 
-];
+// ];
 
 
-function content(array, container, className, title, body){
+// function content(array, container, className, title, body){
 
-    let wrap = document.createElement(container);
-    wrap.classList.add(className);
+//     let wrap = document.createElement(container);
+//     wrap.classList.add(className);
 
-    for(rule of array){
-        let rule_block = document.createElement(container);
-        let rule_title = document.createElement(title);
-        let rule_body = document.createElement(body);
+//     for(rule of array){
+//         let rule_block = document.createElement(container);
+//         let rule_title = document.createElement(title);
+//         let rule_body = document.createElement(body);
 
-        rule_title.innerText = rule.title;
-        rule_body.innerText = rule.body;
+//         rule_title.innerText = rule.title;
+//         rule_body.innerText = rule.body;
 
-        wrap.appendChild(rule_block);
-        rule_block.appendChild(rule_title);
-        rule_block.appendChild(rule_body);
-    };
+//         wrap.appendChild(rule_block);
+//         rule_block.appendChild(rule_title);
+//         rule_block.appendChild(rule_body);
+//     };
 
-    document.body.appendChild(wrap);
+//     document.body.appendChild(wrap);
 
-    return wrap;
+//     return wrap;
 
     
-};
+// };
 
-let list_rules = content(rules, "div", "wrap", "h2", "p");
+// let list_rules = content(rules, "div", "wrap", "h2", "p");
 
-console.log(list_rules);
+// console.log(list_rules);
 
 
 

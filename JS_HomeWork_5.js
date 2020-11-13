@@ -534,42 +534,42 @@
 // --Сторити об'єкт типу "принц" за допомоги функції конструктора з полями ім'я, вік, туфелька яку він знайшов, та функцію "пошук попелюшки"
 // -- функція повинна приймати масив попелюшок, та шукає ту котра йому підходить
 
-function Popelushka(name, age, foot_size){
-    this.name = name;
-    this.age = age;
-    this.foot_size = foot_size;
+// function Popelushka(name, age, foot_size){
+//     this.name = name;
+//     this.age = age;
+//     this.foot_size = foot_size;
 
-    this.couple = function(array){
-        for(let index of girls){
-            if(index.foot_size === prince.shoe_size){
-                console.log(`My name is ${index.name} and my prince is ${prince.name}`)
-            } else {
-                console.log(`Oh shett my foot don't fit to your shoe`);
-            }
-        }
-    }
-};
-
-
-
-let girl_1 = new Popelushka("Kate", 30, 39);
-let girl_2 = new Popelushka("Roksa", 32, 38);
-let girl_3 = new Popelushka("Nadia", 33, 38);
-let girl_4 = new Popelushka("Julia", 27, 37);
-let girl_5 = new Popelushka("Ivanka", 25, 36);
-let girl_6 = new Popelushka("Oksana", 28, 37);
-let girl_7 = new Popelushka("Olga", 21, 40);
-let girl_8 = new Popelushka("Danna", 29, 35);
-let girl_9 = new Popelushka("Inna", 26, 39.4);
-let girl_10 = new Popelushka("ira", 22, 41); 
-
-let girls = [girl_1, girl_2, girl_3, girl_4, girl_5, girl_6, girl_7, girl_8, girl_9, girl_10];
-
-let prince = {
-    name: "Bohdan",
-    age: 26,
-    shoe_size: 36
-};
+//     this.couple = function(array){
+//         for(let index of girls){
+//             if(index.foot_size === prince.shoe_size){
+//                 console.log(`My name is ${index.name} and my prince is ${prince.name}`)
+//             } else {
+//                 console.log(`Oh shett my foot don't fit to your shoe`);
+//             }
+//         }
+//     }
+// };
 
 
-girl_1.couple(girls);
+
+// let girl_1 = new Popelushka("Kate", 30, 39);
+// let girl_2 = new Popelushka("Roksa", 32, 38);
+// let girl_3 = new Popelushka("Nadia", 33, 38);
+// let girl_4 = new Popelushka("Julia", 27, 37);
+// let girl_5 = new Popelushka("Ivanka", 25, 36);
+// let girl_6 = new Popelushka("Oksana", 28, 37);
+// let girl_7 = new Popelushka("Olga", 21, 40);
+// let girl_8 = new Popelushka("Danna", 29, 35);
+// let girl_9 = new Popelushka("Inna", 26, 39.4);
+// let girl_10 = new Popelushka("ira", 22, 41); 
+
+// let girls = [girl_1, girl_2, girl_3, girl_4, girl_5, girl_6, girl_7, girl_8, girl_9, girl_10];
+
+// let prince = {
+//     name: "Bohdan",
+//     age: 26,
+//     shoe_size: 36
+// };
+
+
+// girl_1.couple(girls);
