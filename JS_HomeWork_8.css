@@ -1,0 +1,9 @@
+
+#image_1, #image_2{
+    width: 50px;
+    visibility: hidden;
+}
+
+#button_1 {
+    margin-top: 20px;
+}
